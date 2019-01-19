@@ -1,0 +1,19 @@
+import os
+#os.path.join() => 用來把路徑結合
+path = os.path.join('user', 'bin', "spm")
+print(path)
+myfiles = ['account.txt', 'detail.csv', 'invite.docx']
+for filename in myfiles:
+    print(os.path.join("d:\\python\\asweigart", filename))
+#os.getcwd() =>目前目錄
+print(os.getcwd())
+#os.chdir()  => 更改目錄
+os.chdir("D:\\python")
+CurrentPath = os.getcwd()
+print(CurrentPath)
+# os.makedirs()更改目錄
+#os.makedirs("d:\\python\\0119")
+os.chdir("d:\\python\\0119")
+CurrentPath2 = os.getcwd()
+print(CurrentPath2)
+#os.path
